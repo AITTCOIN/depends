@@ -1,0 +1,9 @@
+prefix=/dev_aitt/aitt_source/depends/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.1.1k
+Requires: libssl libcrypto

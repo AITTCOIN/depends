@@ -1,0 +1,14 @@
+prefix=/dev_aitt/aitt_source/depends/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Test
+Description: Qt Test module
+Version: 5.12.11
+Libs: -L${libdir} -lQt5Test 
+Libs.private: /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libQt5Core.a -lmpr -lnetapi32 -luserenv -lversion -lws2_32 -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libqtpcre2.a    
+Cflags: -DQT_TESTLIB_LIB -I${includedir}/QtTest 
+Requires: Qt5Core
+

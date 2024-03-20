@@ -1,0 +1,14 @@
+prefix=/dev_aitt/aitt_source/depends/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Network
+Description: Qt Network module
+Version: 5.12.11
+Libs: -L${libdir} -lQt5Network 
+Libs.private: /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libQt5Core.a -lmpr -lnetapi32 -luserenv -lversion -lws2_32 -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libqtpcre2.a -ldnsapi -liphlpapi -lcrypt32 /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libQt5Core.a -lmpr -lnetapi32 -luserenv -lversion -lkernel32 -luser32 -lshell32 -luuid -lole32 -ladvapi32 -lwinmm /dev_aitt/aitt_source/depends/x86_64-w64-mingw32/lib/libqtpcre2.a -L/usr/x86_64-w64-mingw32/lib -lssl -lcrypto -lws2_32 -lws2_32  
+Cflags: -DQT_NETWORK_LIB -I${includedir}/QtNetwork 
+Requires: Qt5Core
+
