@@ -1,0 +1,1 @@
+using gcc : : g++ -m64 : <cflags>"-pipe -O2" <cxxflags>"-std=c++17 -fvisibility=hidden -fPIC " <compileflags>"-I/dev_aitt/depends/x86_64-linux-gnu/include" <linkflags>"-L/dev_aitt/depends/x86_64-linux-gnu/lib" <archiver>"ar" <striper>"strip"  <ranlib>"ranlib" <rc>"" : ;

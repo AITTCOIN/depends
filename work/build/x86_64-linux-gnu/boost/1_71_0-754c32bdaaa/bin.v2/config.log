@@ -1,0 +1,179 @@
+...found 9 targets...
+...updating 4 targets...
+common.mkdir libs/config/checks/architecture/bin
+
+        mkdir -p "libs/config/checks/architecture/bin"
+    
+common.mkdir libs/config/checks/architecture/bin/gcc-12
+
+        mkdir -p "libs/config/checks/architecture/bin/gcc-12"
+    
+common.mkdir libs/config/checks/architecture/bin/gcc-12/debug
+
+        mkdir -p "libs/config/checks/architecture/bin/gcc-12/debug"
+    
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/32.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/32.o" "libs/config/checks/architecture/32.cpp"
+
+libs/config/checks/architecture/32.cpp:9:36: error: narrowing conversion of '-1' from 'int' to 'long unsigned int' [-Wnarrowing]
+    9 | int test[sizeof(void*) == 4? 1 : -1];
+      |                                    ^
+libs/config/checks/architecture/32.cpp:9:28: error: size '-1' of array 'test' is negative
+    9 | int test[sizeof(void*) == 4? 1 : -1];
+      |          ~~~~~~~~~~~~~~~~~~^~~~~~~~
+...failed gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/32.o...
+...failed updating 1 target...
+...updated 3 targets...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/64.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/64.o" "libs/config/checks/architecture/64.cpp"
+
+...updated 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/arm.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/arm.o" "libs/config/checks/architecture/arm.cpp"
+
+libs/config/checks/architecture/arm.cpp:13:2: error: #error "Not ARM"
+   13 | #error "Not ARM"
+      |  ^~~~~
+...failed gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/arm.o...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/mips1.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/mips1.o" "libs/config/checks/architecture/mips1.cpp"
+
+libs/config/checks/architecture/mips1.cpp:10:2: error: #error "Not MIPS1"
+   10 | #error "Not MIPS1"
+      |  ^~~~~
+...failed gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/mips1.o...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/power.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/power.o" "libs/config/checks/architecture/power.cpp"
+
+libs/config/checks/architecture/power.cpp:13:2: error: #error "Not PPC"
+   13 | #error "Not PPC"
+      |  ^~~~~
+...failed gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/power.o...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/sparc.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/sparc.o" "libs/config/checks/architecture/sparc.cpp"
+
+libs/config/checks/architecture/sparc.cpp:10:2: error: #error "Not SPARC"
+   10 | #error "Not SPARC"
+      |  ^~~~~
+...failed gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/sparc.o...
+...failed updating 1 target...
+...found 2 targets...
+...updating 1 target...
+gcc.compile.c++ libs/config/checks/architecture/bin/gcc-12/debug/x86.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include     -c -o "libs/config/checks/architecture/bin/gcc-12/debug/x86.o" "libs/config/checks/architecture/x86.cpp"
+
+...updated 1 target...
+...patience...
+...found 165 targets...
+...updating 8 targets...
+common.mkdir bin.v2
+
+        mkdir -p "bin.v2"
+    
+common.mkdir bin.v2/check
+
+        mkdir -p "bin.v2/check"
+    
+common.mkdir bin.v2/check/predef
+
+        mkdir -p "bin.v2/check/predef"
+    
+common.mkdir bin.v2/check/predef/gcc-12
+
+        mkdir -p "bin.v2/check/predef/gcc-12"
+    
+common.mkdir bin.v2/check/predef/gcc-12/debug
+
+        mkdir -p "bin.v2/check/predef/gcc-12/debug"
+    
+common.mkdir bin.v2/check/predef/gcc-12/debug/address-model-64
+
+        mkdir -p "bin.v2/check/predef/gcc-12/debug/address-model-64"
+    
+common.mkdir bin.v2/check/predef/gcc-12/debug/address-model-64/architecture-x86
+
+        mkdir -p "bin.v2/check/predef/gcc-12/debug/address-model-64/architecture-x86"
+    
+gcc.compile.c++ bin.v2/check/predef/gcc-12/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o
+
+    "g++" "-m64"   -std=c++17 -fvisibility=hidden -fPIC  -fPIC -m64 -O0 -fno-inline -Wall -g -I/dev_aitt/depends/x86_64-linux-gnu/include  -DCHECK="BOOST_COMP_GNUC >= BOOST_VERSION_NUMBER(4,3,0)"  -I"/dev_aitt/depends/work/build/x86_64-linux-gnu/boost/1_71_0-754c32bdaaa" -I"/dev_aitt/depends/work/build/x86_64-linux-gnu/boost/1_71_0-754c32bdaaa/libs/predef/include" -c -o "bin.v2/check/predef/gcc-12/debug/address-model-64/architecture-x86/predef_check_cc_09a06289f4560e2f553bb0cbbec71436.o" "/dev_aitt/depends/work/build/x86_64-linux-gnu/boost/1_71_0-754c32bdaaa/libs/predef/tools/check/predef_check_cc_as_cpp.cpp"
+
+...updated 8 targets...
+...found 223 targets...
+...updating 9 targets...
+common.mkdir bin.v2/libs
+
+        mkdir -p "bin.v2/libs"
+    
+common.mkdir bin.v2/libs/thread
+
+        mkdir -p "bin.v2/libs/thread"
+    
+common.mkdir bin.v2/libs/thread/build
+
+        mkdir -p "bin.v2/libs/thread/build"
+    
+common.mkdir bin.v2/libs/thread/build/gcc-12
+
+        mkdir -p "bin.v2/libs/thread/build/gcc-12"
+    
+common.mkdir bin.v2/libs/thread/build/gcc-12/debug
+
+        mkdir -p "bin.v2/libs/thread/build/gcc-12/debug"
+    
+common.mkdir bin.v2/libs/thread/build/gcc-12/debug/threading-multi
+
+        mkdir -p "bin.v2/libs/thread/build/gcc-12/debug/threading-multi"
+    
+common.mkdir bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden
+
+        mkdir -p "bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden"
+    
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden/has_atomic_flag_lockfree_test.o
+
+    "g++" "-m64"   -fvisibility-inlines-hidden -std=c++17 -fvisibility=hidden -fPIC  -fPIC -m64 -pthread -O0 -fno-inline -Wall -g -fvisibility=hidden -I/dev_aitt/depends/x86_64-linux-gnu/include  -DBOOST_ALL_NO_LIB=1  -I"." -c -o "bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden/has_atomic_flag_lockfree_test.o" "libs/thread/src/../build/has_atomic_flag_lockfree_test.cpp"
+
+gcc.link bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden/has_atomic_flag_lockfree
+
+    "g++" "-m64"    -o "bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden/has_atomic_flag_lockfree" -Wl,--start-group "bin.v2/libs/thread/build/gcc-12/debug/threading-multi/visibility-hidden/has_atomic_flag_lockfree_test.o"  -Wl,-Bstatic  -Wl,-Bdynamic -lrt -Wl,--end-group -fPIC -m64 -pthread -g -fvisibility=hidden -fvisibility-inlines-hidden -L/dev_aitt/depends/x86_64-linux-gnu/lib 
+
+...updated 9 targets...
+...found 1 target...
+...updating 1 target...
+
+file /tmp/jam6a33d5f71.000
+# Automatically generated by Boost.Build.
+# Do not edit.
+
+module config-cache {
+  set "default address-model-32-bit-64-bit-<target-os>linux-<toolset-gcc:version>12-<toolset>gcc" : "2" ;
+  set "default architecture-arm-mips1-power-sparc-x86-combined-<target-os>linux-<toolset-gcc:version>12-<toolset>gcc" : "5" ;
+  set "BOOST_COMP_GNUC >= 4.3.0-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>12-<toolset>gcc" : "true" ;
+  set "lockfree boost::atomic_flag-<address-model>64-<architecture>x86-<target-os>linux-<toolset-gcc:version>12-<toolset>gcc" : "true" ;
+}
+
+config-cache.write bin.v2/project-cache.jam
+
+    cat "/tmp/jam6a33d5f71.000" > "bin.v2/project-cache.jam"
+
+...updated 1 target...
